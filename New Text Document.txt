@@ -1,0 +1,10 @@
+life-website markup/
+├── css/
+│   └── styles.css
+├── js/
+│   ├── mobile-menu.js
+│   ├── modal.js
+│   └── server-status.js ✅
+├── images/
+│   └── (your images here)
+├── index.html ✅

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LasIslasFilipinas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/liflogo.webp" />
+
+    <!-- AOS Animate on Scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 1000 });</script>
+
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/3501a71cbe.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- 
+        HEADER
+      -->
+      <header class="page-header">
+        <div class="container header-container">
+          
+          <!-- LOGO -->
+          <a href="index.html" class="logo">
+            <img src="./images/liflogo.webp" alt="Las Islas Filipinas Logo" class="logo-icon" />
+            <div class="logo-text">
+              <span class="logo-blue">LAS ISLAS</span>
+              <span class="logo-red">FILIPINAS</span>
+            </div>
+          </a>
+      
+          <!-- MAIN NAVIGATION -->
+          <nav class="main-navigation">
+            <a href="index.html" class="main-navigation-menu menu-active nav-link-underline">Get Started</a>
+            <a href="rules.html" class="main-navigation-menu nav-link-underline">Rules</a>
+            <a href="https://discord.gg/8WANUeY6hn" class="main-navigation-menu nav-link-underline" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="team.html" class="main-navigation-menu nav-link-underline">Meet The Team!</a>
+          </nav>
+      
+          <!-- HAMBURGER BUTTON (mobile toggle) -->
+          <button class="menu-toggle js-open-menu" aria-label="Open menu" aria-expanded="false">
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+          </button>
+        </div>
+      
+        <!-- MOBILE MENU CONTAINER -->
+        <div class="menu-container js-menu-container">
+          <button class="js-close-menu close-menu-btn" aria-label="Close menu">&times;</button>
+          <ul class="hamburger-menu-list">
+            <li><a href="index.html" class="main-navigation-menu menu-active nav-link-underline">Get Started</a></li>
+            <li><a href="rules.html" class="main-navigation-menu nav-link-underline">Rules</a></li>
+            <li><a href="https://discord.gg/8WANUeY6hn" class="main-navigation-menu nav-link-underline" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="team.html" class="main-navigation-menu nav-link-underline">Meet The Team!</a></li>
+          </ul>
+        </div>
+      </header>
+      
+<!-- 
+        END OF HEADER
+      -->
+
+
+
+    <main>
+      <!-- 
+        BIG HEADING
+      -->
+
+      <section class="hero-section">
+        <div class="container hero-logo">
+          <h1 class="title-text font-chineserocks">
+            <span>READY TO START</span>
+            <span>YOUR JOURNEY?</span>
+          </h1>
+          <button class="hero-logo-button" data-modal-open>Get Whitelisted</button>
+        </div>
+      </section>
+
+<!-- LORE SECTION START -->
+<section class="home-lore" id="lore">
+  <div class="lore-content">
+    <div class="lore-image-wrapper">
+      <div class="lore-image-container">
+        <img src="images/lore-poster.jpg" alt="Lore Poster" class="lore-image-zoom" />
+        <img src="images/blackborder.png" alt="Border Overlay" class="lore-border-overlay" />
+      </div>
+    </div>
+    <div class="lore-text">
+      <h2>General Lore</h2>
+      <p>
+        Las Islas Filipinas exists in a unique universe where the history of the islands and its people follows a path very different from that of the real world.
+      </p>
+      <p>
+        In this universe, the oppression, discrimination, and marginalization of people based on race, heritage, skin color, gender, class, or sexuality never took place. While historical events and figures can still serve as inspiration, any conflict or harm based on these factors has never occurred.
+      </p>
+      <p>
+        Though cruelty, violence, and greed still persist in this universe, conflicts arise not from personal differences, but over power, resources, and wealth. Nations still rise and fall, but humanity’s struggles are rooted in ambition, not hatred or division.
+      </p>
+      <a href="lore.html" class="read-more">Read Full Lore →</a>
+    </div>
+  </div>
+</section>
+<!-- LORE SECTION END -->
+
+<!-- Community Hub Section -->
+<section class="community-section" data-aos="fade-up">
+  <h2 class="community-title font-chineserocks" data-aos="fade-down" data-aos-delay="200">Community Hub</h2>
+  <div class="community-wrapper container">
+    <div class="discord-box" data-aos="zoom-in-right" data-aos-delay="400">
+      <h2><i class="fa-brands fa-discord"></i> Join Our Discord</h2>
+      <iframe
+        src="https://discord.com/widget?id=1325401510871433288&theme=dark"
+        allowtransparency="true"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
+    </div>
+    <div class="server-status-box" data-aos="zoom-in-left" data-aos-delay="600">
+      <h2><i class="fa-solid fa-signal"></i> Server Status</h2>
+      <div id="server-status-info"></div>
+      <a href="redm://connect/cfx.re/join/yz4qzm" target="_blank" class="server-connect-btn retro-western">
+        <i class="fa-solid fa-hat-cowboy"></i> Connect to Server
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+
+    <!--
+        FOOTER
+      -->
+
+      <footer class="custom-footer">
+        <p class="footer-main">
+          We manage our community primarily through our Discord Server <strong>'Las Islas Filipinas'</strong>. All real-time announcements, application status updates, developer news, server updates and other communication are shared there.
+          <br />
+          Join our Discord community today!
+        </p>
+        <a href="https://discord.gg/8WANUeY6hn" target="_blank" class="footer-discord-btn">
+          <i class="fa-brands fa-discord"></i> Click here
+        </a>
+        
+        <p class="footer-signature">
+          <i class="fa-solid fa-paw"></i>
+          hewwoo it's me Kitten Perez, and i coded this website hihihi! <i class="fa-solid fa-paw"></i>
+        </p>
+        <p class="footer-credit">
+          <a href="mailto:itskitten18@gmail.com" class="footer-email-inline">
+            <i class="fa-solid fa-envelope"></i> itskitten18@gmail.com
+          </a>
+        </p>
+      </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        
+        <p class="form-header">Leave your contacts and we will call you back</p>
+
+        <form name="signup_form" autocomplete="on" class="form-container list"  method="">
+     
+                    <label class="form-label">
+                        
+                            <span class="form-label-text">Name </span>
+                            <input type="text" class="form-input" name="full_name"   required />
+                                <!-- <span class="form-input-iconbox"> -->
+                            <svg class="form-input-icon">
+                            <use href="./images/icons.svg#person"></use>
+                            </svg> 
+                                <!-- </span> -->
+                    </label>
+
+                    <label class="form-label">
+                        <span class="form-label-text">Phone</span>
+                        <input type="tel" class="form-input" name="phone_number" required />
+                        <svg class="form-input-icon">
+                                    <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </label>
+
+                    <label class="form-label">
+                        <span class="form-label-text">Email</span>
+                        <input type="email" class="form-input" name="email_add" required />
+                        <svg class="form-input-icon">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </label>
+
+                    <label class="form-label-textarea">
+                        <span class="form-label-text">Comment</span>
+                        <textarea name="comment" class="form-textarea" placeholder="Text input" required></textarea>
+                    </label>
+               
+                <label class="form-agree-box">
+                    <input type="checkbox" value="agree" name="agreement" class="checkbox" required />
+                    <span class="checkbox-icon">
+                        <svg class="check-mark">
+                            <use href="./images/icons.svg#check-mark"></use>
+                        </svg>
+                    </span>
+
+                    <span class="form-agree-box_text">
+                        I accept the terms and conditions of the &nbsp;<a href="#" class="form-agree-box_link" >Privacy Policy</a>
+                    </span>
+                </label>
+
+            <div class="form-button_container">
+                <button type="submit" class="form-button">Send</button>
+            </div>
+           
+        </form>
+
+      </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+<!-- AOS Animate on Scroll JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, 
+    duration: 1000,
+  });
+</script>
+
+<script>
+  setTimeout(() => {
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  }, 100);
+</script>
+
+<!-- Server Status -->
+<script src="js/server-status.js"></script>
+
+  </body>
+</html>
