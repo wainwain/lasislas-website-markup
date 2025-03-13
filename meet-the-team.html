@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet The Team – Las Islas Filipinas</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="./images/liflogo.webp" />
+  <script src="https://kit.fontawesome.com/3501a71cbe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- 
+        HEADER
+      -->
+      <header class="page-header">
+        <div class="container header-container">
+          
+          <!-- LOGO -->
+          <a href="index.html" class="logo">
+            <img src="./images/liflogo.webp" alt="Las Islas Filipinas Logo" class="logo-icon" />
+            <div class="logo-text">
+              <span class="logo-blue">LAS ISLAS</span>
+              <span class="logo-red">FILIPINAS</span>
+            </div>
+          </a>
+      
+          <!-- MAIN NAVIGATION -->
+          <nav class="main-navigation">
+            <a href="index.html" class="main-navigation-menu nav-link-underline">Get Started</a>
+            <a href="rules.html" class="main-navigation-menu nav-link-underline">Rules</a>
+            <a href="https://discord.gg/8WANUeY6hn" class="main-navigation-menu nav-link-underline" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="meet-the-team.html" class="main-navigation-menu menu-active nav-link-underline">Meet The Team!</a>
+          </nav>
+      
+          <!-- HAMBURGER BUTTON (mobile toggle) -->
+          <button class="menu-toggle js-open-menu" aria-label="Open menu" aria-expanded="false">
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+          </button>
+        </div>
+      
+        <!-- MOBILE MENU CONTAINER -->
+        <div class="menu-container js-menu-container">
+          <button class="js-close-menu close-menu-btn" aria-label="Close menu">&times;</button>
+          <ul class="hamburger-menu-list">
+            <li><a href="index.html" class="main-navigation-menu nav-link-underline">Get Started</a></li>
+            <li><a href="rules.html" class="main-navigation-menu nav-link-underline">Rules</a></li>
+            <li><a href="https://discord.gg/8WANUeY6hn" class="main-navigation-menu nav-link-underline" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="team.html" class="main-navigation-menu menu-active nav-link-underline">Meet The Team!</a></li>
+          </ul>
+        </div>
+      </header>
+
+  <main class="team-page">
+    <section class="team-intro">
+      <div class="container">
+        <h1>Who Are We?</h1>
+<p>We are a passionate team of storytellers, gamers, and creators united by a shared mission: to build a world where creativity has no limits. Our RedM server blends immersive storytelling, dynamic gameplay, and a vibrant community into a roleplaying experience like no other.</p>
+
+<p>Each of us brings unique talents — from game design and world-building to community leadership and narrative development — all working together to create something unforgettable.</p>
+
+<p>At Las Islas Filipinas, imagination drives everything. Whether you're here to tell a gripping tale, spark chaos, or simply explore, this is a place where every interaction can become part of something extraordinary.</p>
+      </div>
+    </section>
+
+    <section class="team-grid container">
+
+      <!-- Row 1: Two-up layout -->
+      <div class="team-row two-up">
+        <div class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/webdev.png" alt="Kitten Perez" class="team-img" />
+            <img src="images/blackborder.png" alt="" class="team-frame" />
+          </div>
+          <h3>Kitten Perez</h3>
+          <p>Web Developer</p>
+        </div>
+    
+        <div class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/serverdev.jpg" alt="Valentino Angeles" class="team-img" />
+            <img src="images/blackborder.png" alt="" class="team-frame" />
+          </div>
+          <h3>Valentino Angeles</h3>
+          <p>Server Developer</p>
+        </div>
+      </div>
+    
+      <!-- Row 2: Solo centered -->
+      <div class="team-row solo">
+        <div class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/serverowner.png" alt="Governor K" class="team-img" />
+            <img src="images/blackborder.png" alt="" class="team-frame" />
+          </div>
+          <h3>Governor K</h3>
+          <p>Server Owner</p>
+        </div>
+      </div>
+    
+      <!-- Row 3: Admins grid -->
+      <div class="team-row grid-3">
+        <div class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/adminalexa.png" alt="Alexandra Perez" class="team-img" />
+            <img src="images/blackborder.png" alt="" class="team-frame" />
+          </div>
+          <h3>Alexandra Perez</h3>
+          <p>Admin</p>
+        </div>
+    
+        <div class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/adminjaime.jpg" alt="Jaime Perez" class="team-img" />
+            <img src="images/blackborder.png" alt="" class="team-frame" />
+          </div>
+          <h3>Jaime Perez</h3>
+          <p>Admin</p>
+        </div>
+    
+        <div class="team-card">
+          <div class="team-image-wrapper">
+            <img src="images/adminsigla.png" alt="Sigla Ko" class="team-img" />
+            <img src="images/blackborder.png" alt="" class="team-frame" />
+          </div>
+          <h3>Sigla Ko</h3>
+          <p>Admin</p>
+        </div>
+      </div>
+    
+    </section>
+    
+  </main>
+
+  <!--
+        FOOTER
+      -->
+
+      <footer class="custom-footer">
+        <p class="footer-main">
+          We manage our community primarily through our Discord Server <strong>'Las Islas Filipinas'</strong>. All real-time announcements, application status updates, developer news, server updates and other communication are shared there.
+          <br />
+          Join our Discord community today!
+        </p>
+        <a href="https://discord.gg/8WANUeY6hn" target="_blank" class="footer-discord-btn">
+          <i class="fa-brands fa-discord"></i> Click here
+        </a>
+        
+        <p class="footer-signature">
+          <i class="fa-solid fa-paw"></i>
+          hewwoo it's me Kitten Perez, and i coded this website hihihi! <i class="fa-solid fa-paw"></i>
+        </p>
+        <p class="footer-credit">
+          <a href="mailto:itskitten18@gmail.com" class="footer-email-inline">
+            <i class="fa-solid fa-envelope"></i> itskitten18@gmail.com
+          </a>
+        </p>
+      </footer>
+
+</body>
+</html>

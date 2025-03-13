@@ -1651,9 +1651,9 @@ form {
 LORE PAGE
 ================
 */
-/* === FULL LORE PAGE STYLING === */
 .lore-page-container {
   display: flex;
+  flex-direction: row;
   gap: 40px;
   padding: 120px 40px 80px;
   color: #fefae0;
@@ -1661,10 +1661,11 @@ LORE PAGE
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  flex-wrap: wrap;
 }
 
 .lore-wrapper {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../images/grunge-parchment2.jpg');
   background-attachment: fixed;
@@ -1746,6 +1747,10 @@ LORE PAGE
   font-size: 1.1rem;
   line-height: 1.8;
   text-shadow: 1px 1px 2px #000;
+}
+
+.lore-article section {
+  margin-bottom: 60px;
 }
 
 /* Responsive Layout */
@@ -1892,6 +1897,121 @@ LORE PAGE
   line-height: 1.7;
 }
 /* ========== RULES ========*/
+
+
+/* ========== MEET THE TEAM START ========*/
+.team-page {
+  background-color: #000;
+  color: #fefae0;
+  padding-bottom: 80px;
+}
+
+.team-intro {
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.team-intro h1 {
+  font-family: 'ChineseRocks', sans-serif;
+  font-size: 3rem;
+  color: #ffde59;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.team-intro p {
+  font-family: 'HapnaSlab', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.team-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Reduced spacing between rows */
+}
+
+.team-row.two-up,
+.team-row.grid-3,
+.team-row.solo {
+  display: flex;
+  gap: 15px; /* Reduced spacing between cards */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  text-align: center;
+  width: 363px; /* 💥 10% bigger than 330px */
+  flex-shrink: 0;
+}
+
+.team-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.team-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.team-image-wrapper:hover .team-img {
+  transform: scale(1.05); /* zoom only image */
+}
+
+.team-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.team-card h3 {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-family: 'ChineseRocks', sans-serif;
+  color: #ffd369;
+}
+
+.team-card p {
+  font-family: 'HapnaSlab', serif;
+  font-size: 1rem;
+  color: #fefae0;
+}
+
+
+/* === RESPONSIVE BREAKPOINTS === */
+
+@media (max-width: 768px) {
+  .team-card {
+    width: 80vw;
+  }
+
+  .team-intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .team-intro p {
+    font-size: 1rem;
+  }
+}
+/* ========== MEET THE TEAM END ========*/
 
 
 /*
