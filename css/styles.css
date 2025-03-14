@@ -444,57 +444,70 @@ header {
   background-color: #333;
 }
 
+/* ===== ELEGANT MOBILE MENU ===== */
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 72px;
-  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
-  background-color: white;
-  padding: 24px 16px;
-  z-index: 999;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  height: 100vh;
+  background: rgba(20, 15, 10, 0.95); /* dark semi-transparent theme */
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
 }
 
 .menu-container.is-open {
-  display: block;
+  transform: translateX(0);
 }
 
-.header-grunge {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  z-index: 999;
-  line-height: 0;
-}
-
-.header-grunge img {
-  width: 100%;
-  display: block;
-  pointer-events: none;
-  user-select: none;
+.close-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ffd369;
+  cursor: pointer;
 }
 
 .hamburger-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  width: 100%;
+  text-align: center;
 }
 
-.close-menu-btn {
-  font-size: 32px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 16px;
-  align-self: flex-end;
+.hamburger-menu-list li {
+  margin: 20px 0;
+}
+
+.hamburger-menu-list a {
+  color: #ffd369;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'ChineseRocks', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu-list a:hover,
+.hamburger-menu-list a.menu-active {
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
+
   .main-navigation {
     display: none;
   }
@@ -502,8 +515,57 @@ header {
   .menu-toggle {
     display: flex;
   }
+
+  .menu-container {
+    display: flex;
+  }
+
+  .menu-container.is-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 999;
+    padding: 60px 20px 20px;
+  }
+
+  .hamburger-menu-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .hamburger-menu-list li {
+    margin-bottom: 20px;
+  }
+
+  .hamburger-menu-list a {
+    font-family: 'ChineseRocks', sans-serif;
+    font-size: 1.6rem;
+    color: #ffd369;
+    text-decoration: none;
+    display: block;
+  }
+
+  .close-menu-btn {
+    background: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+  }
 }
-/* END OF HEADER */
+
+/* 
+===============
+END OF HEADER 
+===============
+*/
 
 
 
