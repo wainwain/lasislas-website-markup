@@ -1978,7 +1978,7 @@ LORE PAGE
 }
 
 .rules-panel.open {
-  max-height: 1000px;
+  max-height: none;
   padding: 20px;
 }
 
