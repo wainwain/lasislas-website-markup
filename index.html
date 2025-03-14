@@ -26,6 +26,23 @@
 
   </head>
   <body>
+<!-- 
+        loading
+      -->
+      <div id="preloader">
+        <div class="cat-loader">
+          <svg viewBox="0 0 200 200" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+            <circle class="cat-circle" cx="100" cy="100" r="40" />
+            <path class="cat-ears" d="M60,60 L50,30 L80,40 Z M140,60 L150,30 L120,40 Z" />
+            <circle class="cat-eyes" cx="85" cy="95" r="5" />
+            <circle class="cat-eyes" cx="115" cy="95" r="5" />
+            <path class="cat-mouth" d="M90,115 Q100,125 110,115" />
+          </svg>
+          <p>hewww loading nya~ 🐾</p>
+        </div>
+      </div>
+
+
     <!-- 
         HEADER
       -->
@@ -258,6 +275,12 @@
 
 <!-- Server Status -->
 <script src="js/server-status.js"></script>
+
+<script>
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
+</script>
 
   </body>
 </html>

@@ -194,11 +194,80 @@ h2 {
 }
 
 
-/* START OF HEADER */
+/* =============================
+LOADING SCREEN start
+============================= */
+#preloader {
+  position: fixed;
+  z-index: 9999;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease;
+}
 
-/* ============================= */
-/* HEADER + NAVIGATION STYLES */
-/* ============================= */
+.cat-loader svg {
+  animation: cat-bounce 1s infinite ease-in-out;
+  fill: none;
+}
+
+.cat-circle {
+  stroke: #ffd369;
+  stroke-width: 5;
+  fill: #222;
+}
+
+.cat-ears {
+  fill: #ffd369;
+}
+
+.cat-eyes {
+  fill: #fff;
+}
+
+.cat-mouth {
+  stroke: #fff;
+  stroke-width: 2;
+  fill: none;
+}
+
+.cat-loader p {
+  color: #ffd369;
+  font-family: 'ChineseRocks', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* HIDE PRELOADER AFTER PAGE LOAD */
+body.loaded #preloader {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Bounce animation */
+@keyframes cat-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+/* =============================
+LOADING SCREEN end
+============================= */
+
+
+/* =============================
+HEADER
+============================= */
 
 header {
   background-image: url(../images/grunge.png);
@@ -1924,6 +1993,51 @@ LORE PAGE
   margin-left: 20px;
   padding-left: 20px;
 }
+
+/* mobile responsive */
+@media (max-width: 768px) {
+  .rules-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .rules-sidebar {
+    position: relative;
+    top: auto;
+    max-height: none;
+    border-left: none;
+    border-top: 4px solid #ffd369;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  .rules-sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .rules-sidebar li {
+    flex: 1 1 auto;
+  }
+
+  .rules-sidebar a {
+    white-space: nowrap;
+    font-size: 0.95rem;
+    padding: 6px 8px;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .rules-sidebar a:hover,
+  .rules-sidebar a.active {
+    border-bottom: 2px solid white;
+    background-color: rgba(255, 211, 105, 0.2);
+  }
+}
+/* mobile responsive */
 /* ========== RULES ========*/
 
 
