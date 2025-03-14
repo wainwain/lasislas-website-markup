@@ -1693,12 +1693,30 @@ LORE PAGE
 .lore-sidebar {
   position: sticky;
   top: 100px;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
   flex: 0 0 250px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid #ffd369;
-  border-radius: 12px;
+  align-self: flex-start; /* ✨ this line fixes the extra stretch */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 20px;
-  height: fit-content;
+  border-radius: 8px;
+  border-left: 4px solid #ffd369;
+  font-family: 'ChineseRocks', sans-serif;
+  scrollbar-width: auto;
+  scrollbar-color: #ffd369 transparent;
+  align-self: flex-start;
+}
+
+/* Webkit Scrollbar Style */
+.lore-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.lore-sidebar::-webkit-scrollbar-thumb {
+  background-color: #ffd369;
+  border-radius: 4px;
+}
+.lore-sidebar::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .lore-sidebar ul {
@@ -1712,22 +1730,20 @@ LORE PAGE
 }
 
 .lore-sidebar a {
-  color: #ffd369;
-  font-family: 'ChineseRocks', sans-serif;
-  text-decoration: none;
-  font-size: 1.1rem;
   display: block;
+  color: #ffd369;
+  text-decoration: none;
   padding: 6px 10px;
-  border-left: 4px solid transparent;
-  transition: all 0.3s ease;
+  transition: 0.2s;
 }
 
 .lore-sidebar a:hover,
 .lore-sidebar a.active {
   color: white;
-  border-left: 4px solid #cc1f1a;
-  background-color: rgba(204, 31, 26, 0.2);
+  background-color: rgba(255, 211, 105, 0.1);
+  border-left: 3px solid #fff;
 }
+
 
 .lore-article {
   flex: 1;
