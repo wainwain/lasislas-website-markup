@@ -666,9 +666,8 @@ header {
 
 
 /* ===============================
-   LORE SECTION
-   =============================== */
-/* ===== HOME LORE SECTION ===== */
+LORE SECTION
+=============================== */
 .home-lore {
   background-color: #000000;
   color: #fefae0;
@@ -1292,6 +1291,18 @@ display: inline-block;
       align-items: center;
     }
   }
+
+
+/* override fixed widths that was causing the overflowing issue :c */
+@media (max-width: 600px) {
+  .lore-image-wrapper,
+  .discord-box,
+  .server-status-box {
+    width: 100%;
+  }
+}
+/* override fixed widths that was causing the overflowing issue :c */
+
 
 /* === FOOTER === */
 .footer-container {
@@ -2597,5 +2608,3 @@ LORE PAGE
 .section-no-top-padding {
   padding-top: 0;
 }
-
-
