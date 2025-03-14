@@ -1260,6 +1260,12 @@ footer {
   padding: 100px 0;
 }
 
+.footer-main {
+max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 footer a {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1518,9 +1524,9 @@ form {
   background-color: #0a0a0a;
   color: #e0e0e0;
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 5px 20px 20px;
   font-family: 'HapnaSlab', sans-serif;
-  font-size: 1rem;
+  font-size: .8rem;
   border-top: 2px solid #ffd369;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
 }
@@ -1960,7 +1966,7 @@ LORE PAGE
 
 .team-card {
   text-align: center;
-  width: 363px; /* 💥 10% bigger than 330px */
+  width: 340px;
   flex-shrink: 0;
 }
 
