@@ -338,7 +338,7 @@ header {
 
 @media (max-width: 600px) {
   .logo-text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     letter-spacing: 0.5px;
     flex-direction: row;
     gap: 6px;
