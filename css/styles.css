@@ -307,8 +307,8 @@ header {
 }
 
 .logo-icon {
-  width: 60px;
-  height: 60px;
+  width: 73px;
+  height: 73px;
   object-fit: contain;
   animation: logoEntrance 0.8s ease-out forwards;
   transition: transform 0.3s ease, filter 0.3s ease;
