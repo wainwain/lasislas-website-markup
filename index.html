@@ -192,62 +192,18 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        
-        <p class="form-header">Leave your contacts and we will call you back</p>
-
-        <form name="signup_form" autocomplete="on" class="form-container list"  method="">
-     
-                    <label class="form-label">
-                        
-                            <span class="form-label-text">Name </span>
-                            <input type="text" class="form-input" name="full_name"   required />
-                                <!-- <span class="form-input-iconbox"> -->
-                            <svg class="form-input-icon">
-                            <use href="./images/icons.svg#person"></use>
-                            </svg> 
-                                <!-- </span> -->
-                    </label>
-
-                    <label class="form-label">
-                        <span class="form-label-text">Phone</span>
-                        <input type="tel" class="form-input" name="phone_number" required />
-                        <svg class="form-input-icon">
-                                    <use href="./images/icons.svg#phone"></use>
-                        </svg>
-                    </label>
-
-                    <label class="form-label">
-                        <span class="form-label-text">Email</span>
-                        <input type="email" class="form-input" name="email_add" required />
-                        <svg class="form-input-icon">
-                            <use href="./images/icons.svg#email"></use>
-                        </svg>
-                    </label>
-
-                    <label class="form-label-textarea">
-                        <span class="form-label-text">Comment</span>
-                        <textarea name="comment" class="form-textarea" placeholder="Text input" required></textarea>
-                    </label>
-               
-                <label class="form-agree-box">
-                    <input type="checkbox" value="agree" name="agreement" class="checkbox" required />
-                    <span class="checkbox-icon">
-                        <svg class="check-mark">
-                            <use href="./images/icons.svg#check-mark"></use>
-                        </svg>
-                    </span>
-
-                    <span class="form-agree-box_text">
-                        I accept the terms and conditions of the &nbsp;<a href="#" class="form-agree-box_link" >Privacy Policy</a>
-                    </span>
-                </label>
-
-            <div class="form-button_container">
-                <button type="submit" class="form-button">Send</button>
-            </div>
-           
-        </form>
-
+      
+        <h2 class="form-header">HOW TO GET WHITELISTED</h2>
+      
+        <p style="font-family: 'Unbounded', serif; font-size: .8rem; margin-bottom: 16px; text-align: center;">
+          To connect to our RedM Server, you must first get whitelisted. The whitelisting process is handled through our 
+          <a href="https://discord.gg/8WANUeY6hn" target="_blank" style="color: #5865f2; text-decoration: underline;">Discord Server</a>.
+          <br><br>
+          Kindly join and follow the instructions in the
+          <a href="https://discord.com/channels/1325401510871433288/1331014693396942879" target="_blank" style="color: #5865f2; text-decoration: underline;">🎫┊ʜᴏᴡ-ᴛᴏ-ɢᴇᴛ-ᴡʜɪᴛᴇʟɪꜱᴛᴇᴅ</a> channel.
+        </p>
+      
+        <img src="./images/getwhitelisted.png" alt="Get Whitelisted Instructions" style="max-width: 100%; border-radius: 10px; border: 2px solid #ffd369;" />
       </div>
     </div>
 
@@ -279,6 +235,24 @@
 <script>
   window.addEventListener("load", () => {
     document.body.classList.add("loaded");
+  });
+</script>
+
+<script>
+  window.addEventListener('load', () => {
+    const hasVisited = localStorage.getItem('hasVisited');
+
+    if (!hasVisited) {
+      // First-time visitor: show loader briefly
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+        localStorage.setItem('hasVisited', 'true');
+      }, 1200); // adjust time if needed
+    } else {
+      // Returning visitor: hide loader immediately
+      const preloader = document.getElementById('preloader');
+      if (preloader) preloader.style.display = 'none';
+    }
   });
 </script>
 
