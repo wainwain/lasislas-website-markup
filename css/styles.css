@@ -268,7 +268,6 @@ LOADING SCREEN end
 /* =============================
 HEADER
 ============================= */
-
 header {
   background-image: url(../images/grunge.png);
   background-size: cover;
@@ -283,7 +282,6 @@ header {
 
   z-index: 1000;
 }
-
 
 .header-container {
   display: flex;
